@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Script</title>
+</head>
+<body>
+<script>
+    ending(10072);
+
+    function ending(input) {
+
+        let y = 'В наличии ' + input + ' товар';
+        let g = '';
+        let sells = input + '';
+
+        if(sells[sells.length - 2] === '0' && sells[sells.length - 1] === '1'){
+            g = ' ';
+            y = y + g;
+            console.log(y);
+        }
+        else if (sells[sells.length - 2] === '1') {
+            g = 'ов';
+            y = y + g;
+            console.log(y);
+        } else if(sells[sells.length - 1] === '5'||
+             sells[sells.length - 1] === '6'||
+             sells[sells.length - 1] === '7'||
+             sells[sells.length - 1] === '8'||
+             sells[sells.length - 1] === '9'){
+            g = 'ов';
+            y = y + g;
+            console.log(y);
+        }
+        else if (sells[sells.length - 1] === '4' ||
+            sells[sells.length - 1] === '3' ||
+            sells[sells.length - 1] === '2') {
+            g = 'а';
+            y = y + g;
+            console.log(y);
+        }else {
+            g = 'ов';
+            y = y + g;
+            console.log(y);
+        }
+    }
+</script>
+</body>
+</html>
