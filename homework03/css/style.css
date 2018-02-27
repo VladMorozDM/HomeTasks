@@ -1,6 +1,24 @@
 * {
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+
+}
+
+h1{
+    font-size: 2em;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+
+ul{
+    padding: 0;
+}
 
 .wrapper, .header, .footer{
 
@@ -190,17 +208,38 @@
 }
 
 .purple_title{
+    position: relative;
     display: flex;
     padding: 24px 0 19px 0;
     flex-direction: row;
     align-items: center;
     color: white;
 }
+.purple_title .empty{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 213px;
+    width: 28px;
+    height: 55px;
+    background-color: #fff;
+    transform: rotate(137deg);
+}
+
+.main_forms .purple_title .empty{  left: 199px;  }
+.main_comments .purple_title .empty{ left: 150px;}
+.sidebar .purple_title .empty {
+    top: 8px;
+    left: 236px;
+    height: 52px;
+}
 .purple_title h3{
+    height: 39px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: #5261ac;
-    padding: 11px 24px 12px 24px;
+    padding: 11px 45px 12px 24px;
 }
 .sidebar .purple_title h3{
     width: 62%;
@@ -208,7 +247,7 @@
     display: flex;
     flex-direction: row;
     background-color: #5261ac;
-    padding: 6px 11px 11px 16px;
+    padding: 0 11px 0 16px;
 }
 
 
@@ -407,8 +446,8 @@
     padding: 4px 0 19px 0;
 }
 .sidebar_middle .purple_title h3{
-    width: 62%;
-    padding: 4px 11px 11px 16px;
+    width: 100%;
+    padding: 0 11px 0 16px;
 }
 .sidebar_middle_content li{
     display: flex;
@@ -423,6 +462,9 @@
 .sidebar_end  p{
     padding-left: 20px;
 }
+.sidebar_end .purple_title h3{
+    width: 100%;
+}
 .sidebar_end  li:before {
     position: absolute;
     content: '';
@@ -431,6 +473,10 @@
     border-style: solid;
     border-width: 9px 0 7px 9px;
     border-color: transparent transparent transparent #007bff;
+}
+
+.sidebar_cloud .purple_title h3{
+    width: 100%;
 }
 
 .bg_left{
@@ -449,21 +495,4 @@
 .bold{
     font-weight: bold;
 }
-a{
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
 
-}
-
-h1{
-    font-size: 2em;
-    margin: 0;
-}
-li{
-    list-style-type: none;
-}
-
-ul{
-    padding: 0;
-}
