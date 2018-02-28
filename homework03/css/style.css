@@ -28,7 +28,9 @@ ul{
     z-index: 1;
     font-family: 'Roboto', sans-serif;
 }
+
 .header{
+    position: relative;
     padding: 0 29px 0 29px;
 }
 
@@ -47,10 +49,12 @@ ul{
 }
 
 .header_top .header_social img{
+    cursor: pointer;
     margin-left: 2px;
 }
 
 .header_search{
+
     display: flex;
     align-items:flex-end;
     padding: 1px 30px 0 0;
@@ -58,6 +62,7 @@ ul{
 }
 
 .btn {
+    cursor: pointer;
     display: flex;
     align-items: center;
     font-size: 19px;
@@ -201,9 +206,11 @@ ul{
 
 .main_content_collage img{
     width: 25%;
+    border: 1px solid #bfbfbf;
 }
 
 .main_content_collage .active{
+    padding: 5px;
     width: 100%;
 }
 
@@ -354,14 +361,11 @@ ul{
 }
 
 .footer{
-    width: 73%;
+    width: 77.9%;
     overflow: hidden;
+    background: url(../img/footer.jpg);
     background-color: #ebebeb;
-}
-
-.footer img{
-    display: flex;
-    align-self: flex-start;
+    background-repeat: repeat-x;
 }
 
 .copy{
@@ -373,6 +377,7 @@ ul{
 .sidebar{
     width: 100%;
     padding-right: 22px;
+    position: relative;
 }
 
 .sidebar ul{
@@ -386,6 +391,7 @@ ul{
 }
 
 .sidebar_start li{
+    padding:0 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -442,6 +448,7 @@ ul{
     margin-bottom: 22px;
 }
 
+
 .sidebar_middle .purple_title{
     padding: 4px 0 19px 0;
 }
@@ -450,6 +457,7 @@ ul{
     padding: 0 11px 0 16px;
 }
 .sidebar_middle_content li{
+    padding:0 5px;
     display: flex;
     flex-direction: row;
 }
@@ -464,6 +472,9 @@ ul{
 }
 .sidebar_end .purple_title h3{
     width: 100%;
+}
+.sidebar_end  li{
+padding:0 5px;
 }
 .sidebar_end  li:before {
     position: absolute;
@@ -481,18 +492,29 @@ ul{
 
 .bg_left{
     position: absolute;
-    top: -176px;
-    left: -166px;
+    top: -32%;
+    left: -20%;
     z-index: -1;
     width: 57%;
 }
 .bg_right{
     position: absolute;
-    top:1px;
-    right: 1px;
-    z-index: -1;
+    top: 0;
+    right: -13px;
+    z-index: 0;
 }
-.bold{
-    font-weight: bold;
+.sidebar_middle .bg_right{
+     top: 801px;
+ }
+.sidebar_end .bg_right{
+    top: 1602px;
+}
+
+.sidebar .sidebar_cloud p{
+    padding-left: 5px;
+    max-width: 334px;
+}
+.sidebar .sidebar_cloud a{
+    padding-right: 5px;
 }
 
