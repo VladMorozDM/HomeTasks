@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html{
@@ -432,7 +433,9 @@ ul{
     left: 45%;
 }
 
-
+.add{
+    padding: 62px 0;
+}
 .add > div:first-child{
     display: flex;
     flex-direction: row;
@@ -444,10 +447,106 @@ ul{
     align-items: center;
     justify-content: space-between;
     width: 87.7%;
+    height: 106px;
     margin: 0 auto;
 }
 
+.about{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 67.7%;
+    align-items: center;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #b8b8b8;
+}
+.about h3{
+    color: #000;
+    font-size: 25px;
+    padding-bottom: 5px
+}
+.pay{
+    background: #f7f7f7;
 
+}
+.pay-systems{
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87.7%;
+    margin: 0 auto;
+    color: #b8b8b8;
+}
+.pay .pay-systems a, .pay .pay-systems span{
+    margin-right: 10px;
+}
+
+.footer .lighter-foot{
+    background:  #ededed;
+}
+.footer .lighter-foot div{
+    display: flex;
+    flex-direction: row;
+    width: 87.7%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 0;
+}
+
+.footer .lighter-foot div ul li:first-child a{
+    font-weight: bolder;
+    font-size: 20px;
+    color: #000;
+}
+.footer .lighter-foot div ul li:first-child{
+    padding-bottom: 20px;
+}
+.footer .lighter-foot div .social img{
+    margin: 0 10px 10px 0;
+}
+.footer .lighter-foot div ul li a{
+    color: #b8b8b8;
+}
+.footer .lighter-foot .rectangle{
+    width: 106px;
+    height: 106px;
+}
+
+.footer{
+    background: #000;
+}
+.footer .dark-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 87.7%;
+    min-height: 74px;
+}
+
+.menu-bottom{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    justify-items: auto;
+}
+.dark-foot li a{
+    color: #737373;
+    font-size: 11px;
+}
+.footer .dark-foot ul li{
+    padding: 0 10px;
+    border-right: 2px solid #737373;
+}
+.footer .dark-foot .copy li{
+    color: #737373;
+    border-right: none;
+}
 @keyframes navbar {
     0%{
         opacity: 0;
