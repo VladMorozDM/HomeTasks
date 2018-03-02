@@ -1,6 +1,4 @@
-/**
- * Created by vlad on 02.03.2018.
- */
+'use strict';
 let y = 0;
 let x = 0;
 do {
