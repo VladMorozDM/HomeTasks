@@ -1,14 +1,17 @@
 'use strict';
 let y = 0;
 let x = 0;
+
 do {
     x = prompt('Type x: ', '');
     x = parseInt(x);
+    x = 10*x;
     if (isNaN(x)) {
         alert('Я не знаю таких чисел');
     } else {
         y = prompt('Type y: ', '');
         y = parseInt(y);
+        y = 10*y;
         if (isNaN(y)) {
             alert('Я не знаю таких чисел');
         }
@@ -42,8 +45,8 @@ ctx.moveTo(500,1000);
 ctx.lineTo(500,0);
 ctx.strokeStyle = '#000';
 ctx.stroke();
-ctx.moveTo(x+505,500-y);
-ctx.arc(500+x, 500-y, 5, 0, 360);
+ctx.moveTo(x+501,500-y);
+ctx.arc(500+x, 500-y, 1, 0, 360);
 ctx.stroke();
 
 

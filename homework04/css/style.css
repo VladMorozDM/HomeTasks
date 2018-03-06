@@ -1,35 +1,37 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-html{
+html {
     height: 100%;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-.wrapper{
+.wrapper {
     min-height: 100%;
     width: 100%;
     position: relative;
 }
 
-.user-line span{
+.user-line span {
     display: flex;
     align-self: center;
     margin: 0 124px;
     text-transform: uppercase;
 }
 
-.user-line{
+.user-line {
     color: #ffffff;
     background-color: #000000;
     display: flex;
@@ -38,11 +40,11 @@ ul{
 
 }
 
-.user-line a{
+.user-line a {
     color: #ffffff;
 }
 
-.user-line .settings{
+.user-line .settings {
     display: flex;
     cursor: pointer;
     margin: 0 153px;
@@ -50,50 +52,51 @@ ul{
     font-family: sans-serif;
 }
 
-
-.user-line .settings li{
+.user-line .settings li {
     position: relative;
 }
 
 .user-line li {
     line-height: 34px;
     padding: 0 20px;
-    border-right: 1px solid #444444 ;
+    border-right: 1px solid #444444;
     text-align: center;
 }
 
-.user-line .settings .langueges{
+.user-line .settings .langueges {
     display: none;
     position: absolute;
 
 }
 
-
-.user-line .settings li:hover .langueges{
+.user-line .settings li:hover .langueges {
     display: block;
     position: absolute;
     background-color: #000;
     animation: navbar 250ms;
 }
 
-.user-line .settings li:hover{
+.user-line .settings li:hover {
     background-color: #900;
 }
-.user-line .settings li:hover .active{
+
+.user-line .settings li:hover .active {
     color: #fff;
 }
-.user-line .settings .search{
+
+.user-line .settings .search {
     width: 34px;
     padding: 0 0;
 }
+
 .user-line .settings .search form input {
-    background: black url('../img/searchicon.png') no-repeat ;
+    background: black url('../img/searchicon.png') no-repeat;
     width: 100%;
     border: none;
     background-position: 10px 0;
 }
 
-.header-bottom{
+.header-bottom {
     height: 66px;
     width: 87.7%;
     margin: 0 auto;
@@ -102,34 +105,32 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
-.header-bottom .select{
+
+.header-bottom .select {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-
-
-.header-bottom select{
+.header-bottom select {
     border: none;
 }
 
-
-.container{
+.container {
     width: 100%;
     height: 484px;
     position: relative;
     background-color: #f5f1eb;
 }
 
-.slide-img{
+.slide-img {
     position: absolute;
     width: 100%;
     height: 90%;
     z-index: 100;
 }
 
-.slide-img img{
+.slide-img img {
     width: 100%;
     height: 100%;
 }
@@ -143,7 +144,7 @@ ul{
     display: none;
 }
 
-.pre, .nxt{
+.pre, .nxt {
     cursor: pointer;
     width: 30px;
     height: 90px;
@@ -151,20 +152,20 @@ ul{
     z-index: 11;
 }
 
-.pre{
+.pre {
     position: absolute;
     top: 40%;
     left: 0;
 }
-.nxt{
+
+.nxt {
     position: absolute;
     top: 40%;
     right: 0;
 }
 
-
 .arrow-left,
-.arrow-right{
+.arrow-right {
     position: absolute;
     z-index: 11;
     width: 10px;
@@ -175,32 +176,34 @@ ul{
     left: 25%;
 
 }
-.arrow-left{
+
+.arrow-left {
     transform: rotate(45deg);
 }
-.arrow-right{
+
+.arrow-right {
     transform: rotate(225deg);
 }
 
-.nav-dots{
+.nav-dots {
     width: 100%;
     height: 11px;
     bottom: 5%;
     position: absolute;
     z-index: 13;
     text-align: center;
- }
+}
 
-.dots{
+.dots {
     display: inline-block;
     width: 10px;
     height: 10px;
     position: relative;
     border-radius: 50%;
-    background: rgba(0,0,0, .4);
+    background: rgba(0, 0, 0, .4);
 }
 
-.slide-img{
+.slide-img {
     right: 100%;
     z-index: -1;
 }
@@ -209,7 +212,7 @@ ul{
 #i2:checked ~ #two,
 #i3:checked ~ #three,
 #i4:checked ~ #four,
-#i5:checked ~ #five{
+#i5:checked ~ #five {
     z-index: 9;
     right: 0;
     -webkit-animation: slider 1000ms;
@@ -221,28 +224,35 @@ ul{
 #i2:checked ~ .nav-dots #dot2,
 #i3:checked ~ .nav-dots #dot3,
 #i4:checked ~ .nav-dots #dot4,
-#i5:checked ~ .nav-dots #dot5{
+#i5:checked ~ .nav-dots #dot5 {
     background: #fd926d;
 }
 
+.social-line {
+    background: #f7f7f7;
+}
+
+.social-line div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 87.7%;
+    margin: 0 auto;
+}
 
 .plus {
-    display: inline-block;
+    border: none;
+    padding: 10px 20px;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     cursor: pointer;
-    padding: 10px 20px;
-    border: 1px solid #018dc4;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.9);
+    background: #fd926d;
     font: normal 16px/normal Arial Black, Gadget, sans-serif;
-    color: rgba(255,255,255,0.9);
     -o-text-overflow: clip;
     text-overflow: clip;
-    background: #fd926d;
-    -webkit-box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.5) inset;
-    box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.5) inset;
     -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
     -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
     -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -250,28 +260,24 @@ ul{
 }
 
 .enjoy-css {
-    display: inline-block;
+    border: none;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     padding: 10px 20px;
-    border: 1px solid #b7b7b7;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
     font: normal 16px/normal "Times New Roman", Times, serif;
-    color: rgba(0,142,198,1);
+    color: rgba(0, 142, 198, 1);
     -o-text-overflow: clip;
     text-overflow: clip;
-    background: rgba(252,252,252,1);
-    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+    background: rgba(252, 252, 252, 1);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.66);
     -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-
-.collage{
+.collage {
     width: 87.8%;
     height: 350px;
     margin: 0 auto;
@@ -280,113 +286,137 @@ ul{
     justify-content: center;
 }
 
-.collage > div:first-child{
+.collage img {
+    height: 100%;
+    width: 100%;
+}
+
+.collage > div:first-child {
     margin-right: 5px;
 }
-.col-two > div:first-child{
+
+.col-two > div:first-child {
     margin-bottom: 5px;
 }
-.row-two > img:first-child{
+
+.row-two > a:first-child {
     padding-right: 5px;
 }
 
-.col-one{
+.col-one {
     height: 100%;
 }
-.col-two{
+
+.col-two {
     display: flex;
     flex-direction: column;
 }
-.row-one{
+
+.row-one {
     height: 50%;
-    width: 105%;
-}
-.row-two{
-    display: flex;
-    height: 50%;
+    width: 100%;
 }
 
-.carusel{
+.row-two {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.carusel {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
 
-.carusel .carusel-menu{
+.carusel .carusel-menu {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     width: 87.8%;
+    transition: 500ms;
 }
 
-.carusel .carusel-menu ul li{
+.carusel .carusel-menu ul li {
+    cursor: pointer;
     line-height: 47px;
     text-align: center;
     text-transform: uppercase;
     display: inline-block;
     background: #fff;
     padding: 0 40px;
+    transition: 500ms;
 }
 
-.carusel .carusel-menu ul li:hover{
+.carusel .carusel-menu ul li:hover {
     background: #fd926d;
     transition: 500ms;
 }
-.carusel .carusel-menu ul li:hover a{
+
+.carusel .carusel-menu ul li:hover a {
     color: #fff;
     transition: 500ms;
 }
 
-.carusel .carusel-menu ul .active{
+.carusel .carusel-menu ul .active {
     background: #fd926d;
 }
-.carusel .carusel-menu ul .active a{
+
+.carusel .carusel-menu ul .active a {
     color: #fff;
 }
 
-.carusel .carusel-menu ul li a{
+.carusel .carusel-menu ul li a {
     color: #000;
 }
 
-.carusel .carusel-menu ul{
+.carusel .carusel-menu ul {
     display: flex;
     justify-content: flex-end;
     width: 60%;
 }
 
-.carusel-menu .arrows{
+.carusel-menu .arrows {
     width: 40%;
     display: flex;
     justify-content: flex-end;
 }
 
-.carusel-menu .arrows > div{
+.carusel-menu .arrows > div {
     width: 10%;
     height: 100%;
     cursor: pointer;
     background: #f2f2f2;
 }
 
-.carusel-menu .arrows > div:hover{
+.carusel-menu .arrows > div:hover {
     background: #fd926d;
     transition: 500ms;
 }
 
-.carusel-baraban{
-    width: 110%;
-    overflow: hidden;
+.carusel-baraban {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     background: #fd926d;
 }
 
-.carusel-baraban > div{
+.carusel-baraban > div {
     padding: 0 15px;
 }
 
-.top-sales{
+.carusel-baraban div, .carusel-baraban img, .carusel-baraban p {
+    width: 100%;
+}
+
+
+
+.carusel-baraban .holder{
+    cursor: pointer;
+}
+.top-sales {
     width: 87.7%;
     margin: 0 auto;
     display: flex;
@@ -394,28 +424,43 @@ ul{
     justify-content: center;
 }
 
-.top-sales .rectangle{
+.top-sales .rectangle {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.top-sales .rectangle >div >img{
+
+.top-sales .rectangle > div > img {
     padding: 0 18px;
 }
- .line{
+
+.line {
     width: 100%;
     height: 0;
     border-bottom: 1px solid #d8d8d8;
 }
 
-.top-sales .top-model{
+.top-sales .top-model {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+.holder:hover .holder-wrapper {
+    transition: .5s;
+    position: relative;
+    top: -10px;
+    box-shadow: 0 5px 20px 0 #000;
+}
+
+.top-sales .holder{
+    max-width: 220px;
+}
+
+
 .arrows .arrow-left,
-.arrows .arrow-right{
+.arrows .arrow-right {
     position: relative;
     z-index: 1;
     top: 45%;
@@ -425,23 +470,26 @@ ul{
     border-bottom: 3px solid gray;
 }
 
-.arrows .arrow-right{
+.arrows .arrow-right {
     left: 40%;
 
 }
-.arrows .arrow-left{
+
+.arrows .arrow-left {
     left: 45%;
 }
 
-.add{
+.add {
     padding: 62px 0;
 }
-.add > div:first-child{
+
+.add > div:first-child {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.add .brends{
+
+.add .brends {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -451,8 +499,8 @@ ul{
     margin: 0 auto;
 }
 
-.about{
-    margin: 0 auto;
+.about {
+    margin: 0 auto 30px auto;
     display: flex;
     flex-direction: column;
     width: 67.7%;
@@ -462,16 +510,19 @@ ul{
     text-align: center;
     color: #b8b8b8;
 }
-.about h3{
+
+.about h3 {
     color: #000;
     font-size: 25px;
-    padding-bottom: 5px
+    padding-bottom: 20px
 }
-.pay{
+
+.pay {
     background: #f7f7f7;
 
 }
-.pay-systems{
+
+.pay-systems {
     height: 58px;
     display: flex;
     justify-content: center;
@@ -480,14 +531,16 @@ ul{
     margin: 0 auto;
     color: #b8b8b8;
 }
-.pay .pay-systems a, .pay .pay-systems span{
+
+.pay .pay-systems a, .pay .pay-systems span {
     margin-right: 10px;
 }
 
-.footer .lighter-foot{
-    background:  #ededed;
+.footer .lighter-foot {
+    background: #ededed;
 }
-.footer .lighter-foot div{
+
+.footer .lighter-foot div {
     display: flex;
     flex-direction: row;
     width: 87.7%;
@@ -497,29 +550,45 @@ ul{
     padding: 33px 0;
 }
 
-.footer .lighter-foot div ul li:first-child a{
+.footer .lighter-foot div ul li:first-child a {
     font-weight: bolder;
     font-size: 20px;
     color: #000;
 }
-.footer .lighter-foot div ul li:first-child{
+
+.footer .lighter-foot div ul li:first-child {
     padding-bottom: 20px;
 }
-.footer .lighter-foot div .social img{
+
+.footer .lighter-foot div .social img {
     margin: 0 10px 10px 0;
 }
-.footer .lighter-foot div ul li a{
+
+.footer .lighter-foot div ul li a {
     color: #b8b8b8;
 }
-.footer .lighter-foot .rectangle{
+
+.footer .lighter-foot .rectangle {
     width: 106px;
     height: 106px;
 }
 
-.footer{
+.footer .lighter-foot ul li:hover {
+    font-weight: bolder;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+.footer .lighter-foot ul li:hover a {
+    color: #000;
+    transition: 500ms;
+}
+
+.footer {
     background: #000;
 }
-.footer .dark-foot{
+
+.footer .dark-foot {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -528,43 +597,399 @@ ul{
     min-height: 74px;
 }
 
-.menu-bottom{
+.menu-bottom {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
     justify-items: auto;
 }
-.dark-foot li a{
+
+.dark-foot li a {
     color: #737373;
     font-size: 11px;
 }
-.footer .dark-foot ul li{
+
+.footer .dark-foot ul li {
     padding: 0 10px;
     border-right: 2px solid #737373;
 }
-.footer .dark-foot .copy li{
+
+.footer .dark-foot .copy li {
     color: #737373;
     border-right: none;
 }
+
+.footer .dark-foot ul li:hover {
+    background: #737373;
+    transition: 500ms;
+}
+
+.footer .dark-foot ul li:hover a {
+    color: #000;
+    transition: 500ms;
+}
+
 @keyframes navbar {
-    0%{
+    0% {
         opacity: 0;
         top: 37px;
     }
-    100%{
-        opacity:1;
+    100% {
+        opacity: 1;
         top: 34px;
     }
 }
 
 @keyframes slider {
-    0%{
+    0% {
         opacity: 0;
         right: 10px;
     }
-    100%{
-        opacity:1;
+    100% {
+        opacity: 1;
         right: 0;
     }
+}
+
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+    margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+    text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+    display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none;
 }
