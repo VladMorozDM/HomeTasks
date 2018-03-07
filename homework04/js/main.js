@@ -3,21 +3,37 @@
 
      'use strict';
 let $ = jQuery;
+
+    let owl = $('.owl-carousel');
+
      $('.owl-carousel').owlCarousel({
-         stagePadding: 150,
+
          loop:true,
-         margin:75,
-         nav:true,
+         margin:30,
+
          responsive:{
              0:{
-                 items:1
+                 margin:30,
+                 items:2
              },
-             600:{
+             768:{
+                 stagePadding: 0,
                  items:3
              },
              1000:{
-                 items:6
+                 stagePadding: 100,
+                 items:4
              }
          }
      })
+
+    $('.custom-next').click(function() {
+        owl.trigger('next.owl.carousel');
+    })
+    $('.custom-prev').click(function() {
+        owl.trigger('prev.owl.carousel', [300]);
+    })
+
 })();
+
+
