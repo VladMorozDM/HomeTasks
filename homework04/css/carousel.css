@@ -1,0 +1,80 @@
+
+.owl-carousel{
+    background: #fd926d;
+}
+
+.carousel .holder .holder-wrapper{
+    cursor: pointer;
+}
+
+.carousel .carousel-menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 88%;
+    transition: 500ms;
+}
+
+.carousel .carousel-menu ul li {
+    cursor: pointer;
+    line-height: 47px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    background: #fff;
+    padding: 0 40px;
+    transition: 500ms;
+}
+
+.carousel .carousel-menu ul li:hover {
+    background: #fd926d;
+    transition: 500ms;
+}
+
+.carousel .carousel-menu ul li:hover a {
+    color: #fff;
+    transition: 500ms;
+}
+
+.carousel  .carousel-menu ul .active {
+    background: #fd926d;
+}
+
+.carousel .carousel-menu .active a {
+    color: #fff;
+}
+
+.carousel .carousel-menu ul li a {
+    color: #000;
+}
+
+.carousel .carousel-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.carousel-menu .arrows {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+ .owl-carousel .owl-nav.disabled .owl-prev,
+ .owl-carousel .owl-nav.disabled .owl-next{
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    background: #f2f2f2;
+}
+.owl-carousel .owl-nav.disabled .owl-next:hover,
+.owl-carousel .owl-nav.disabled .owl-prev:hover {
+    background: #fd926d;
+    transition: 500ms;
+}
+
+.carousel .owl-carousel .owl-dots.disabled, .carousel .owl-carousel .owl-nav.disabled {
+    display: flex;
+}
+

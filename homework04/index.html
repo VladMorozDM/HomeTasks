@@ -7,10 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/carousel.css">
+    <title>Homework04</title>
+
+    <!-- Owl Carusel -->
+    <link rel="stylesheet" href="js/plugins/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/plugins/OwlCarousel/dist/assets/owl.theme.default.min.css">
 </head>
 <body>
-<div id="wrapper">
+<div id="wrapper" class="wrapper">
     <div id="header" class="header">
         <div class="user-line">
             <span>custom care: 888-23-9891</span>
@@ -182,8 +187,8 @@
             </div>
         </div>
     </div>
-    <div class="carusel">
-        <div class="carusel-menu">
+    <div class="carousel">
+        <div class="carousel-menu">
             <ul>
                 <li class="active"><a href="#">what`s hot?</a></li>
                 <li><a href="#">designers</a></li>
@@ -191,16 +196,18 @@
                 <li><a href="#">latest</a></li>
             </ul>
             <div class="arrows">
-                <div>
-                    <div class="arrow-left"></div>
+                <div class="disabled">
+                    <div class="arrow-left owl-prev owl-dots"></div>
                 </div>
-                <div>
-                    <div class="arrow-right"></div>
+                <div class="disabled">
+                    <div class="arrow-right owl-next owl-dots"></div>
                 </div>
 
             </div>
         </div>
-        <div class="carusel-baraban">
+        <div class=" owl-carousel">
+
+
             <div class="holder">
                 <div class="holder-wrapper">
                     <div>
@@ -352,6 +359,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
     <div class="add">
         <div>
@@ -469,5 +477,10 @@
             </div>
         </div>
     </footer>
+    <script src="js/plugins/OwlCarousel/docs/assets/vendors/jquery.min.js"></script>
+    <script src="js/plugins/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</div>
 </body>
 </html>

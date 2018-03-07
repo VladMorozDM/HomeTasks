@@ -98,7 +98,7 @@ ul {
 
 .header-bottom {
     height: 66px;
-    width: 87.7%;
+    width: 88%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -237,7 +237,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 87.7%;
+    width: 88%;
     margin: 0 auto;
 }
 
@@ -323,101 +323,9 @@ ul {
     width: 100%;
 }
 
-.carusel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-}
-
-.carusel .carusel-menu {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    width: 87.8%;
-    transition: 500ms;
-}
-
-.carusel .carusel-menu ul li {
-    cursor: pointer;
-    line-height: 47px;
-    text-align: center;
-    text-transform: uppercase;
-    display: inline-block;
-    background: #fff;
-    padding: 0 40px;
-    transition: 500ms;
-}
-
-.carusel .carusel-menu ul li:hover {
-    background: #fd926d;
-    transition: 500ms;
-}
-
-.carusel .carusel-menu ul li:hover a {
-    color: #fff;
-    transition: 500ms;
-}
-
-.carusel .carusel-menu ul .active {
-    background: #fd926d;
-}
-
-.carusel .carusel-menu ul .active a {
-    color: #fff;
-}
-
-.carusel .carusel-menu ul li a {
-    color: #000;
-}
-
-.carusel .carusel-menu ul {
-    display: flex;
-    justify-content: flex-end;
-    width: 60%;
-}
-
-.carusel-menu .arrows {
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.carusel-menu .arrows > div {
-    width: 10%;
-    height: 100%;
-    cursor: pointer;
-    background: #f2f2f2;
-}
-
-.carusel-menu .arrows > div:hover {
-    background: #fd926d;
-    transition: 500ms;
-}
-
-.carusel-baraban {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: #fd926d;
-}
-
-.carusel-baraban > div {
-    padding: 0 15px;
-}
-
-.carusel-baraban div, .carusel-baraban img, .carusel-baraban p {
-    width: 100%;
-}
-
-
-
-.carusel-baraban .holder{
-    cursor: pointer;
-}
 .top-sales {
-    width: 87.7%;
+    width: 88%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -494,7 +402,7 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 87.7%;
+    width: 88%;
     height: 106px;
     margin: 0 auto;
 }
@@ -527,7 +435,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 87.7%;
+    width: 88%;
     margin: 0 auto;
     color: #b8b8b8;
 }
@@ -543,7 +451,7 @@ ul {
 .footer .lighter-foot div {
     display: flex;
     flex-direction: row;
-    width: 87.7%;
+    width: 88%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -593,7 +501,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 87.7%;
+    width: 88%;
     min-height: 74px;
 }
 
