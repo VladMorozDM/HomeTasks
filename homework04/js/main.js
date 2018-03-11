@@ -1,5 +1,5 @@
 (()=> {
-
+    console.log(document.images)
 
      'use strict';
 let $ = jQuery;
@@ -14,11 +14,11 @@ let $ = jQuery;
          responsive:{
              0:{
                  margin:30,
-                 items:2
+                 items:3
              },
              768:{
                  stagePadding: 0,
-                 items:3
+                 items:4
              },
              1000:{
                  stagePadding: 100,

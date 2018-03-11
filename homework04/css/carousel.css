@@ -12,17 +12,21 @@
 .carousel .carousel-menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 0 auto;
     width: 88%;
     transition: 500ms;
 }
 
 .carousel .carousel-menu ul li {
+    width: 183px;
+
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    line-height: 47px;
+
     text-align: center;
     text-transform: uppercase;
-    display: inline-block;
     background: #fff;
     padding: 0 40px;
     transition: 500ms;
@@ -53,11 +57,11 @@
 .carousel .carousel-menu ul {
     display: flex;
     justify-content: flex-end;
-    width: 60%;
+    /*width: 60%;*/
 }
 
 .carousel-menu .arrows {
-    width: 40%;
+    /*width: 40%;*/
     display: flex;
     justify-content: flex-end;
 }
@@ -99,17 +103,22 @@
     box-shadow: 0 5px 20px 0 #000;
 }
 
-.carousel .holder .carousel-content{
-    text-transform: uppercase;
+ .holder .carousel-content{
     display: flex;
     text-align: center;
     align-items: center;
+     justify-content: center;
     flex-direction: column-reverse;
-    background: #fff;
+    background: rgb(249, 249, 249);
+     text-transform: uppercase;
 
 }
 
-.carousel .holder .carousel-content button{
+.holder .carousel-content p .price{
+    font-size: 30px;
+}
+ .holder .carousel-content button,
+ .collage button{
     text-transform: uppercase;
     cursor: pointer;
     border: none;
@@ -123,7 +132,10 @@
 .carousel .holder .holder-over{
     display: none;
 }
-.carousel .holder .holder-wrapper div:first-child:hover .holder-over{
+ .holder .holder-over{
+    display: none;
+}
+ .holder .holder-wrapper div:first-child:hover .holder-over{
     display: block;
     position: absolute;
     top: 50%;
@@ -133,8 +145,8 @@
     transform:  translate(50%,-50%);
 }
 
-.carousel .holder .holder-wrapper img{
-    /*max-height: 290px;*/
+.top-model .holder .holder-wrapper div:first-child{
+    /*height: 294px;*/
 }
 .carousel .holder{
     /*min-width: 220px;*/

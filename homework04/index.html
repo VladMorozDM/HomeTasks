@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/carousel.css">
-
+    <link rel="stylesheet" href="css/ipad.css">
     <title>Homework04</title>
 
     <!-- Owl Carusel -->
@@ -19,87 +19,119 @@
 <body>
 <div id="wrapper" class="wrapper">
     <div id="header" class="header">
-        <div class="user-line">
-            <span>custom care: 888-23-9891</span>
-            <ul class="settings">
-                <li><a class="active" href="#">$us</a>
-                    <ul class="langueges">
-                        <li><a href="#">ru</a></li>
-                        <li><a href="#">chinese</a></li>
-                        <li><a href="#">pl</a></li>
-                    </ul>
-                </li>
-                <li><img src="img/user.png" alt=""> <a href="#">my account</a></li>
-                <li class="search">
-                    <form action="#">
-                        <input type="text">
-                    </form>
-                </li>
-            </ul>
+        <div class="header-wrapper">
+            <div class="user-line">
+                <span>custom care: 888-23-9891</span>
+                <ul class="settings">
+                    <li><a class="active" href="#">$us</a>
+                        <ul class="langueges">
+                            <li><a href="#">ru</a></li>
+                            <li><a href="#">chinese</a></li>
+                            <li><a href="#">pl</a></li>
+                        </ul>
+                    </li>
+                    <li><img src="img/user.png" alt=""> <a href="#">my account</a></li>
+                    <li class="search">
+                        <form action="#">
+                            <input type="text">
+                        </form>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="header-bottom">
             <img src="img/logo.png" alt="">
-            <ul class="select">
-                <li>
-                    <form action="#">
-                        <select name="new" id="s1">
-                            <option value="">new</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                    </form>
-                </li>
-                <li>
-                    <form action="#">
-                        <select name="design" id="s2">
-                            <option value="">design</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                    </form>
-                </li>
-                <li>
-                    <form action="#">
-                        <select name="women" id="s3">
-                            <option value="">women</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                    </form>
-                </li>
-                <li>
-                    <form action="#">
-                        <select name="men" id="s4">
-                            <option value="">men</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                    </form>
-                </li>
-                <li>
-                    <form action="#">
-                        <select name="clearence" id="s5">
-                            <option value="">clearence</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                    </form>
-                </li>
-                <li>
-                    <form>
-                        <select id="card" name="card">
-                            <option value="au">Your card</option>
-                            <option value="ca">second card</option>
-                            <option value="usa">credit card</option>
-                        </select>
-                    </form>
+            <div class="select-cart">
+                <div class="select-top">
+                    <p>Your cart</p>
+                </div>
+                <div class="select-bottom">
+                    <img src="img/selectbegg.png" alt="">
+                    <p><span>0 items</span> | <span id="priceSum">$ 0</span></p>
+                </div>
+            </div>
+            <div class="select">
+                <div class="burger">
+                    <h3>menu</h3>
+                    <div class="burger-block">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <ul class="select-stuff">
+                    <li>
+                        <form action="#">
+                            <select name="new" id="s1">
+                                <option value="">new</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="#">
+                            <select name="design" id="s2">
+                                <option value="">design</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="#">
+                            <select name="women" id="s3">
+                                <option value="">women</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="#">
+                            <select name="men" id="s4">
+                                <option value="">men</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="#">
+                            <select name="clearence" id="s5">
+                                <option value="">clearence</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>
+                        <!--<form>-->
+                        <!--<select id="card" class="select" name="card">-->
+                        <!---->
+                        <!--<option value="au">Your card</option>-->
+                        <!--<option value="ca">second card</option>-->
+                        <!--<option value="usa">credit card</option>-->
 
+                        <!--</select>-->
+                        <!--</form>-->
 
-                </li>
-            </ul>
+                    </li>
+                </ul>
+                <div class="select-cart">
+                    <div class="select-top">
+                        <p>Your cart</p>
+                    </div>
+                    <div class="select-bottom">
+                        <img src="img/selectbegg.png" alt="">
+                        <p><span id="items">0 items</span> | <span id="sumPrice">$ 0</span></p>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
-    <div id="main">
+    <div id="main" class="main">
         <div class="container">
             <input type="radio" name="image" id="i1" checked>
             <input type="radio" name="image" id="i2">
@@ -144,7 +176,8 @@
                 </label>
             </div>
             <div class="slide-img" id="five">
-                <img src="https://static.zerochan.net/Dio.Brando.full.704093.jpg" alt="">
+                <img src="http://i95.fastpic.ru/big/2017/0709/fc/_1564669221c32e47627362cd9306b4fc.png?noht=1"
+                     alt="">
                 <label for="i4" class="pre">
                     <div class="arrow-left"></div>
                 </label>
@@ -163,14 +196,15 @@
         <div class="social-line">
             <div>
                 <form action="#">
-                    <input class="enjoy-css" placeholder="Enjoy"/>
+                    <p>Stay updated:</p>
+                    <input class="enjoy-css" placeholder="Your email adress"/>
                     <input type="button" class="plus" value="+"/>
                 </form>
                 <ul>
                     <li>Find us here:</li>
-                    <li><a href="#"><img src="#" alt=""></a></li>
-                    <li><a href="#"><img src="#" alt=""></a></li>
-                    <li><a href="#"><img src="#" alt=""></a></li>
+                    <li><a href="#"><img src="img/facebook2.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/twitter2.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/patreon2.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -184,7 +218,13 @@
                 </div>
                 <div class="row-two">
                     <a href="#"><img src="img/collage3.jpg" alt=""></a>
-                    <a href="#"><img src="img/collage4.jpg" alt=""></a>
+                    <a href="#"><img src="img/collage4.jpg" alt="">
+                        <div class="shop-now">
+                            <button>shop now
+                                <div class="triangle"></div>
+                            </button>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -216,11 +256,11 @@
                     </div>
                     <div class="carousel-content">
                         <div class="add-card">
-                            <button>Add to my card  +</button>
+                            <button>Add to my card +</button>
                         </div>
                         <div>
                             <p>hot short</p>
-                            <p><p><span class="price">39$</span></p></p>
+                            <p><span class="price">39$</span></p>
                         </div>
                     </div>
                 </div>
@@ -233,7 +273,7 @@
                     </div>
                     <div class="carousel-content">
                         <div class="add-card">
-                            <button>Add to my card  +</button>
+                            <button>Add to my card +</button>
                         </div>
                         <div>
                             <p>hot short</p>
@@ -250,7 +290,7 @@
                     </div>
                     <div class="carousel-content">
                         <div class="add-card">
-                            <button>Add to my card  +</button>
+                            <button>Add to my card +</button>
                         </div>
                         <div>
                             <p>hot short</p>
@@ -267,7 +307,7 @@
                     </div>
                     <div class="carousel-content">
                         <div class="add-card">
-                            <button>Add to my card  +</button>
+                            <button>Add to my card +</button>
                         </div>
                         <div>
                             <p>hot short</p>
@@ -284,11 +324,12 @@
                     </div>
                     <div class="carousel-content">
                         <div class="add-card">
-                            <button>Add to my card  +</button>
+                            <button>Add to my card +</button>
                         </div>
                         <div>
                             <p>hot short</p>
-                            <p><p><span class="price">39$</span></p></p>
+                            <p>
+                            <p><span class="price">39$</span></p></p>
                         </div>
                     </div>
                 </div>
@@ -301,7 +342,7 @@
                     </div>
                     <div class="carousel-content">
                         <div class="add-card">
-                            <button>Add to my card  +</button>
+                            <button>Add to my card +</button>
                         </div>
                         <div>
                             <p>hot short</p>
@@ -325,13 +366,35 @@
             <div class="holder">
                 <div class="holder-wrapper">
                     <div>
-                        <img src="img/carusel.jpg" alt="">
+                        <img src="img/carusel03.jpg" alt="">
+                        <img class="holder-over" src="img/shop-it.png" alt="">
                     </div>
                     <div class="carousel-content">
-                        <div class="add-card"></div>
+                        <div class="add-card">
+                            <button>Add to my card +</button>
+                        </div>
                         <div>
                             <p>hot short</p>
-                            <p><span class="price">39$</span></p>
+                            <p>
+                            <p><span class="price">39$</span></p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="holder-wrapper">
+                    <div>
+                        <img src="img/carusel01.jpg" alt="">
+                        <img class="holder-over" src="img/shop-it.png" alt="">
+                    </div>
+                    <div class="carousel-content">
+                        <div class="add-card">
+                            <button>Add to my card +</button>
+                        </div>
+                        <div>
+                            <p>hot short</p>
+                            <p>
+                            <p><span class="price">39$</span></p></p>
                         </div>
                     </div>
                 </div>
@@ -340,13 +403,16 @@
                 <div class="holder-wrapper">
                     <div>
                         <img src="img/carusel.jpg" alt="">
-                        
+                        <img class="holder-over" src="img/shop-it.png" alt="">
                     </div>
                     <div class="carousel-content">
-                        <div class="add-card"></div>
+                        <div class="add-card">
+                            <button>Add to my card +</button>
+                        </div>
                         <div>
                             <p>hot short</p>
-                            <p><span class="price">39$</span></p>
+                            <p>
+                            <p><span class="price">39$</span></p></p>
                         </div>
                     </div>
                 </div>
@@ -354,32 +420,22 @@
             <div class="holder">
                 <div class="holder-wrapper">
                     <div>
-                        <img src="img/carusel.jpg" alt="">
+                        <img src="img/carusel01.jpg" alt="">
+                        <img class="holder-over" src="img/shop-it.png" alt="">
+                    </div>
+                    <div class="carousel-content">
+                        <div class="add-card">
+                            <button>Add to my card +</button>
+                        </div>
+                        <div>
+                            <p>hot short</p>
+                            <p>
+                            <p><span class="price">39$</span></p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    </div>
-                    <div class="carousel-content">
-                        <div class="add-card"></div>
-                        <div>
-                            <p>hot short</p>
-                            <p><span class="price">39$</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="holder">
-                <div class="holder-wrapper">
-                    <div>
-                        <img src="img/carusel.jpg" alt="">
-                    </div>
-                    <div class="carousel-content">
-                        <div class="add-card"></div>
-                        <div>
-                            <p>hot short</p>
-                            <p><span class="price">39$</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div class="add">
@@ -430,53 +486,62 @@
     <footer id="footer" class="footer">
         <div class="lighter-foot">
             <div>
-                <ul>
-                    <li><a href="#">Custom Service</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Terms of payment</a></li>
-                    <li><a href="#">Terms of sale</a></li>
-                    <li><a href="#">Delivery terms and conditions</a></li>
-                    <li><a href="#">Returns and refounds</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Information</a></li>
-                    <li><a href="#">Affiliate</a></li>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">How to Shop</a></li>
-                    <li><a href="#">About Nelly</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Campaigns</a></li>
-                    <li><a href="#">Evening dresses</a></li>
-                    <li><a href="#">Makeup</a></li>
-                    <li><a href="#">Fashion forward</a></li>
-                    <li><a href="#">training clothes</a></li>
-                    <li><a href="#">Special Occasion Dresses</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Stores</a></li>
-                    <li><a href="#">Paris</a></li>
-                    <li><a href="#">New York</a></li>
-                    <li><a href="#">London</a></li>
-                    <li><a href="#">Madrid</a></li>
-                    <li><a href="#">Tokio</a></li>
-                </ul>
-                <ul class='social'>
-                    <li><a href="#">Social</a></li>
-                    <li>
-                        <a href="#"><img src="img/twitter.png" alt=""></a>
-                        <a href="#"><img src="img/patreon.png" alt=""></a>
-                        <a href="#"><img src="img/facebook.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/google.png" alt=""></a>
-                        <a href="#"><img src="img/tumblr.png" alt=""></a>
-                        <a href="#"><img src="img/vine.png" alt=""></a>
-                    </li>
-                </ul>
-                <img class="rectangle" src="img/100percent.png" alt="">
+                <div class="left">
+                    <div class="left-one">
+                        <ul>
+                            <li><a href="#">Custom Service</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms of payment</a></li>
+                            <li><a href="#">Terms of sale</a></li>
+                            <li><a href="#">Delivery terms and conditions</a></li>
+                            <li><a href="#">Returns and refounds</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Information</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">How to Shop</a></li>
+                            <li><a href="#">About Nelly</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-two">
+                        <ul>
+                            <li><a href="#">Campaigns</a></li>
+                            <li><a href="#">Evening dresses</a></li>
+                            <li><a href="#">Makeup</a></li>
+                            <li><a href="#">Fashion forward</a></li>
+                            <li><a href="#">training clothes</a></li>
+                            <li><a href="#">Special Occasion Dresses</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Stores</a></li>
+                            <li><a href="#">Paris</a></li>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">London</a></li>
+                            <li><a href="#">Madrid</a></li>
+                            <li><a href="#">Tokio</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul class='social'>
+                        <li><a href="#">Social</a></li>
+                        <li>
+                            <a href="#"><img src="img/twitter.png" alt=""></a>
+                            <a href="#"><img src="img/patreon.png" alt=""></a>
+                            <a href="#"><img src="img/facebook.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/google.png" alt=""></a>
+                            <a href="#"><img src="img/tumblr.png" alt=""></a>
+                            <a href="#"><img src="img/vine.png" alt=""></a>
+                        </li>
+                    </ul>
+                    <img class="rectangle" src="img/100percent.png" alt="">
+                </div>
             </div>
         </div>
         <div class="dark-foot">

@@ -24,20 +24,43 @@ ul {
     position: relative;
 }
 
+.header-wrapper {
+    background-color: #000000;
+}
+
+.header-bottom,
+.social-line div,
+.collage,
+.carousel .carousel-menu,
+.top-sales,
+.top-sales,
+.footer .dark-foot {
+    width: 88%;
+}
+
+.top-sales .top-model{
+    max-height: 384px;
+    overflow: hidden;
+}
+
+
 .user-line span {
     display: flex;
     align-self: center;
-    margin: 0 124px;
+
     text-transform: uppercase;
 }
 
 .user-line {
-    color: #ffffff;
-    background-color: #000000;
+    margin: 0 auto;
+    width: 86%;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    color: #ffffff;
 }
 
 .user-line a {
@@ -47,7 +70,7 @@ ul {
 .user-line .settings {
     display: flex;
     cursor: pointer;
-    margin: 0 153px;
+    /*margin: 0 153px;*/
     text-transform: uppercase;
     font-family: sans-serif;
 }
@@ -57,7 +80,7 @@ ul {
 }
 
 .user-line li {
-    line-height: 34px;
+    line-height: 30px;
     padding: 0 20px;
     border-right: 1px solid #444444;
     text-align: center;
@@ -97,17 +120,22 @@ ul {
 }
 
 .header-bottom {
-    height: 66px;
-    width: 88%;
-    margin: 0 auto;
+
+    margin: 25px auto;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+
 }
 
-.header-bottom .select {
+.header-bottom img {
+    margin: 23px 0;
+}
+
+.header-bottom .select-stuff {
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -117,11 +145,94 @@ ul {
     border: none;
 }
 
+.header-bottom > img {
+    width: 120px;
+    height: 28px;
+}
+
+.header-bottom .select {
+    display: flex;
+    flex-direction: row;
+}
+
+/* -------------------------BURGER MENU------------ */
+
+.header-bottom .select .burger {
+    height: 40px;
+    padding: 0 10px;
+
+    display: none;
+    color: #fff;
+    background: #fd926d;
+}
+
+.header-bottom .select .burger h3 {
+    display: flex;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.header-bottom .select .burger .burger-block {
+    width: 23px;
+    height: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-bottom .select .burger .burger-block div {
+    height: 4px;
+    border-radius: 10px;
+
+    background: #fff;
+}
+
+/* -----------------------------BURGER MENU--------------- */
+.header-bottom div .select-cart {
+    width: 212px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bottom .select-cart {
+    display: none;
+}
+
+.header-bottom .select-cart .select-top {
+    width: 212px;
+    height: 40px;
+    padding: 10px 10px;
+    border: 1px solid #d6d6d6;
+    color: #d6d6d6;
+}
+
+.header-bottom .select-cart .select-bottom {
+    width: 212px;
+    height: 40px;
+    padding: 10px 10px;
+    border: 1px solid #d6d6d6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: #d6d6d6;
+}
+
+/*.header-bottom > .select-top,*/
+/*.header-bottom > .select-bottom{*/
+/*display: none;*/
+/*}*/
+
+.main {
+    margin: 25px 0;
+}
+
 .container {
     width: 100%;
     height: 484px;
     position: relative;
-    background-color: #f5f1eb;
+
 }
 
 .slide-img {
@@ -187,6 +298,7 @@ ul {
 }
 
 .nav-dots {
+
     width: 100%;
     height: 11px;
     bottom: 5%;
@@ -196,12 +308,14 @@ ul {
 }
 
 .dots {
+    cursor: pointer;
     display: inline-block;
     width: 10px;
     height: 10px;
     position: relative;
     border-radius: 50%;
     background: rgba(0, 0, 0, .4);
+    margin-right: 20px;
 }
 
 .slide-img {
@@ -231,20 +345,45 @@ ul {
 
 .social-line {
     background: #f7f7f7;
+    margin: 50px 0;
 }
 
 .social-line div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    margin: 50px auto;
+}
+
+.social-line div ul {
+    display: flex;
     align-items: center;
-    width: 88%;
-    margin: 0 auto;
+}
+
+.social-line div ul li {
+
+}
+
+.social-line div ul img {
+    height: 50px;
+}
+
+.social-line div ul img {
+    background: #fff;
+}
+
+.social-line div form {
+    display: flex;
+    max-height: 58px;
+    align-items: center;
+    align-self: center;
 }
 
 .plus {
+    height: 38px;
     border: none;
-    padding: 10px 20px;
+    padding: 0 20px;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
@@ -261,6 +400,7 @@ ul {
 }
 
 .enjoy-css {
+    width: 116px;
     border: none;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -279,9 +419,9 @@ ul {
 }
 
 .collage {
-    width: 88%;
+
     height: 350px;
-    margin: 0 auto;
+    margin: 0 auto 75px auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -325,14 +465,59 @@ ul {
     height: 50%;
     width: 100%;
 }
-.row-two a{
+
+.row-two a:last-child {
+    position: relative;
+}
+
+.collage .col-two .row-two .shop-now {
+    max-height: 32px;
+    position: absolute;
+    z-index: 2;
+    top: 55%;
+    right: 55%;
+}
+
+.collage .col-two .row-two button {
+
+    display: flex;
+
+    text-transform: uppercase;
+    cursor: pointer;
+
+    border: none;
+    padding: 10px 10px;
+
+    background: #4fafa0;
+    color: #fff;
+    transition: .5s;
+}
+
+.collage .col-two .row-two a .shop-now:hover button {
+    background: #5fbfa4;
+}
+
+.collage .triangle {
+    content: '';
+    width: 0;
+    height: 0;
+
+    display: flex;
+    align-self: center;
+    margin-left: 10px;
+
+    border-style: solid;
+    border-width: 5px 0 5px 7px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.row-two a {
     width: 100%;
 }
 
-
 .top-sales {
-    width: 88%;
-    margin: 0 auto;
+
+    margin: 25px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,15 +547,15 @@ ul {
     flex-wrap: wrap;
 }
 
-.top-sales .holder:hover .holder-wrapper {
+.top-sales .holder:hover{
 
     position: relative;
     top: -10px;
     box-shadow: 0 5px 20px 0 #000;
 }
 
-.top-sales .holder{
-    max-width: 220px;
+.top-sales .holder {
+    /*max-width: 220px;*/
 }
 
 .add {
@@ -388,7 +573,7 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 88%;
+
     height: 106px;
     margin: 0 auto;
 }
@@ -421,7 +606,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 88%;
+
     margin: 0 auto;
     color: #b8b8b8;
 }
@@ -430,21 +615,51 @@ ul {
     margin-right: 10px;
 }
 
+/* ---------------------------FOOTER-----------*/
 .footer .lighter-foot {
     background: #ededed;
 }
-
-.footer .lighter-foot div {
-    display: flex;
-    flex-direction: row;
-    width: 88%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 33px 0;
+.footer .lighter-foot ul{
+    margin: 20px 10px 0 20px;
 }
 
-.footer .lighter-foot div ul li:first-child a {
+.footer .lighter-foot > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .lighter-foot .left {
+    /*width: 50%;*/
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer .lighter-foot .left .left-one,
+.footer .lighter-foot .left .left-two {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .lighter-foot .right {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer .lighter-foot .right > img{
+    margin: 20px 10px;
+}
+
+.footer .lighter-foot .left ul{
+    height: 169px;
+}
+.footer .lighter-foot ul li:first-child a {
     font-weight: bolder;
     font-size: 20px;
     color: #000;
@@ -487,7 +702,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 88%;
+
     min-height: 74px;
 }
 
@@ -524,6 +739,8 @@ ul {
     transition: 500ms;
 }
 
+/* ---------------------------FOOTER-----------*/
+
 @keyframes navbar {
     0% {
         opacity: 0;
@@ -545,4 +762,5 @@ ul {
         right: 0;
     }
 }
+
 
