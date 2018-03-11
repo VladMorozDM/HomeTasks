@@ -14,7 +14,7 @@ let $ = jQuery;
          responsive:{
              0:{
                  margin:30,
-                 items:3
+                 items:2
              },
              768:{
                  stagePadding: 0,

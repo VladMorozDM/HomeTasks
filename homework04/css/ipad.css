@@ -1,0 +1,55 @@
+@media only screen and (min-device-width : 640px) and (max-device-width : 768px)
+{
+    .header-bottom,
+    .social-line div,
+    .collage,
+    .carousel .carousel-menu,
+    .top-sales,
+    .top-sales,
+    .footer .dark-foot {
+        width: 95%;
+    }
+    .carousel .carousel-menu ul li{
+        width: 127px;
+    }
+    .header .header-bottom .select-cart{
+        display: flex;
+        flex-direction: column;
+    }
+    .header .header-bottom div .select-cart {
+        display: none;
+    }
+    .header-bottom .select .burger{
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header .select {
+        width: 100%;
+        margin: 50px 0;
+
+    }
+    .header .select ul{
+        display: none;
+    }
+    .header .select ul select{
+        color: #fff;
+        background: #fd926d;
+    }
+
+
+
+
+    /* ---------------------------FOOTER-----------*/
+
+    .footer .lighter-foot .left .left-one,
+    .footer .lighter-foot .left .left-two {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .lighter-foot .left {
+        width: 50%;
+    }
+}
