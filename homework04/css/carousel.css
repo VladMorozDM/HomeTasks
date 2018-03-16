@@ -119,14 +119,15 @@
 }
  .holder .carousel-content button,
  .collage button{
+
     text-transform: uppercase;
     cursor: pointer;
     border: none;
-    padding: 5px 5px;
+    padding: 15px 10px;
     margin: 5px 5px;
     background: #fd926d;
     color: #fff;
-    max-height: 32px;
+
 }
 
 .carousel .holder .holder-over{

@@ -116,7 +116,7 @@ ul {
     background: black url('../img/searchicon.png') no-repeat;
     width: 100%;
     border: none;
-    background-position: 10px 0;
+    background-position: 50% 50%;
 }
 
 .header-bottom {
@@ -132,6 +132,10 @@ ul {
 
 .header-bottom img {
     margin: 23px 0;
+}
+
+.header-bottom .select-cart img{
+    margin: 0;
 }
 
 .header-bottom .select-stuff {
@@ -215,15 +219,10 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     color: #d6d6d6;
 }
-
-/*.header-bottom > .select-top,*/
-/*.header-bottom > .select-bottom{*/
-/*display: none;*/
-/*}*/
-
 .main {
     margin: 25px 0;
 }
@@ -361,9 +360,10 @@ ul {
     align-items: center;
 }
 
-.social-line div ul li {
-
-}
+.social-line div ul li:first-child {
+    display: flex;
+    align-items: center;
+ }
 
 .social-line div ul img {
     height: 50px;

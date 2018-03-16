@@ -1,3 +1,185 @@
-@media only screen and (max-device-width : 640px){
+@media only screen and (max-device-width : 640px) and (min-device-width: 320px){
+    .header-bottom,
+    .social-line div,
+    .collage,
+    .top-sales,
+    .footer .dark-foot {
+        width: 95%;
+    }
+    .main{
+        margin: 0 auto;
+    }
+    .collage, .container, .add, .about, .select-top,
+    .pay-systems, .lighter-foot, .menu-bottom
+    {
+        display: none;
+    }
 
+    .thick{
+        height: 100px;
+    }
+    .header-bottom{
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .user-line{
+        width: 100%;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .user-line .settings li{
+        height:  100%;
+        line-height: 100%;
+
+        display: flex;
+        align-items: center;
+
+        font-size:  2em;
+    }
+    .user-line .settings img{
+        height: 48px;
+    }
+    .user-line .settings .search{
+        width: 15%;
+    }
+    .user-line span{
+        width: 100%;
+        padding: 10px 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #d6d6d6;
+        background: whitesmoke;
+    }
+    .user-line .settings{
+        width: 100%;
+    }
+    .header-bottom > img{
+        width:  60%;
+        height: 100px;
+    }
+
+
+    .header .header-bottom .select-cart{
+        width: 100%;
+        margin-bottom: 23px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-bottom .select-cart .select-bottom{
+        width: 100%;
+        height: 100px;
+    }
+
+    .select-bottom span{
+        font-size: 2em;
+    }
+
+    .header-bottom .select-cart img{
+        width: 10%;
+        height: 50%;
+    }
+    .header .header-bottom div .select-cart {
+        display: none;
+    }
+    .header-bottom .select .burger .burger-block{
+        width: 30px;
+        height: 36px;
+    }
+    .header-bottom .select .burger .burger-block div{
+        height: 5px;
+    }
+    .header-bottom .select .burger{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header .select {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .header-bottom .select .burger h3{
+        font-size: 2em;
+    }
+    .header .select{
+        margin:0;
+    }
+    .header .select ul{
+
+        display: none;
+    }
+    .header .select ul select{
+        color: #fff;
+        background: #fd926d;
+    }
+
+    .social-line{
+        margin: 35px auto;
+        background: none;
+        font-size: 2em;
+    }
+    .social-line div form{
+        width: 100%;
+        max-height: 100%;
+        margin-bottom: 35px;
+    }
+    .social-line div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .social-line div p{
+        display: none;
+    }
+
+    .social-line div ul li:first-child{
+        padding-right: 10px;
+    }
+    .social-line div ul img{
+        height: 100%;
+    }
+    .enjoy-css {
+        width: 100%;
+        height: 100px;
+        padding: 0 20px;
+        font-size: 2rem;
+        font-style: italic;
+    }
+    .plus{
+        font-size: 4rem;
+    }
+
+    /* -------------Carousel----------------------- */
+    .carousel .carousel-menu,
+    .carousel .carousel-menu ul{
+        width: 100%;
+    }
+    .carousel .carousel-menu ul .active{
+        width: 100%;
+        display: flex;
+
+        font-size: 2em;
+    }
+    .carousel .carousel-menu ul li,
+    .carousel-menu .arrows{
+        display: none;
+    }
+    /* -------------Carousel----------------------- */
+
+
+
+    .top-sales .top-model{
+        justify-content: space-around;
+    }
 }
