@@ -38,10 +38,7 @@ ul {
     width: 88%;
 }
 
-.top-sales .top-model{
-    max-height: 384px;
-    overflow: hidden;
-}
+
 
 
 .user-line span {
@@ -541,6 +538,8 @@ ul {
 }
 
 .top-sales .top-model {
+    max-height: 384px;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -613,6 +612,10 @@ ul {
 
 .pay .pay-systems a, .pay .pay-systems span {
     margin-right: 10px;
+}
+
+.load-more{
+    display: none;
 }
 
 /* ---------------------------FOOTER-----------*/

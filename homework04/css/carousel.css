@@ -43,7 +43,7 @@
 }
 
 .carousel  .carousel-menu ul .active {
-    background: #fd926d;
+    background: #e38362;
 }
 
 .carousel .carousel-menu .active a {
@@ -61,9 +61,12 @@
 }
 
 .carousel-menu .arrows {
-    /*width: 40%;*/
     display: flex;
     justify-content: flex-end;
+}
+
+.triangle{
+    display: none;
 }
 
 .carousel .arrows .disabled{

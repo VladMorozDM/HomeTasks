@@ -12,7 +12,9 @@
     .carousel .carousel-menu ul li{
         width: 127px;
     }
-
+    .top-sales .top-model {
+        max-height: 405px;
+    }
     .header .header-bottom .select-cart{
         display: flex;
         flex-direction: column;
@@ -39,7 +41,6 @@
         color: #fff;
         background: #fd926d;
     }
-
 
 
 
