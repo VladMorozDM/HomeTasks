@@ -1,0 +1,26 @@
+.context-menu{
+    padding: 0;
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+.context-menu li{
+    width: 100px;
+    border: 1px solid #b3b3b3;
+
+    text-align: center;
+    background: white;
+}
+.context-menu li:hover{
+    box-shadow: 4px 0 #3f3f3f inset;
+}
+.tricky{
+    position: relative;
+    height: 60px;
+    width: 150px;
+    border: none;
+
+    cursor: pointer;
+    color: #fff;
+    background: #00aedb;
+}
