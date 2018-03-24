@@ -50,6 +50,7 @@
     .footer .lighter-foot .left .left-two {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
     .footer .lighter-foot .left {
         width: 50%;

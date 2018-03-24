@@ -42,13 +42,7 @@
     transition: 500ms;
 }
 
-.carousel  .carousel-menu ul .active {
-    background: #e38362;
-}
 
-.carousel .carousel-menu .active a {
-    color: #fff;
-}
 
 .carousel .carousel-menu ul li a {
     color: #000;
@@ -65,7 +59,7 @@
     justify-content: flex-end;
 }
 
-.triangle{
+.carousel .carousel-menu .triangle{
     display: none;
 }
 

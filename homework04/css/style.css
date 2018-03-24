@@ -117,7 +117,7 @@ ul {
 }
 
 .header-bottom {
-
+    height: 88px;
     margin: 25px auto;
 
     display: flex;
@@ -192,8 +192,14 @@ ul {
 /* -----------------------------BURGER MENU--------------- */
 .header-bottom div .select-cart {
     width: 212px;
+    height: 40px;
     display: flex;
     flex-direction: column;
+    align-self: center;
+
+}
+.select-cart{
+    position: static;
 }
 
 .header-bottom .select-cart {
@@ -205,12 +211,13 @@ ul {
     height: 40px;
     padding: 10px 10px;
     border: 1px solid #d6d6d6;
+    margin: 0;
     color: #d6d6d6;
 }
 
 .header-bottom .select-cart .select-bottom {
     width: 212px;
-    height: 40px;
+    margin: 0;
     padding: 10px 10px;
     border: 1px solid #d6d6d6;
     display: flex;
@@ -220,8 +227,26 @@ ul {
 
     color: #d6d6d6;
 }
+.ui-button:active .ui-icon{
+    background-image: none;
+}
+.header-bottom .select-cart .select-top{
+    background: white;
+}
+.select-top .ui-button:active .ui-icon{
+    /*background-image: none;*/
+}
+.header-bottom .select-cart .ui-icon{
+    position: absolute;
+
+    transform: translateY(50%);
+    top: 18%;
+    left: 11.5em;
+}
+
+
 .main {
-    margin: 25px 0;
+    margin: 0 0 25px 0;
 }
 
 .container {
@@ -538,7 +563,7 @@ ul {
 }
 
 .top-sales .top-model {
-    max-height: 384px;
+    max-height: 405px;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -644,6 +669,7 @@ ul {
 .footer .lighter-foot .left .left-two {
     display: flex;
     flex-direction: row;
+
 }
 
 .footer .lighter-foot .right {
