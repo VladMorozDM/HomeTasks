@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -153,24 +154,24 @@ ul{
     top: 32px;
 }
 
- .date{
-     display: flex;
-     justify-content: center;
-     align-items: center;
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 37px;
-     height: 45px;
-     width: 66px;
+    height: 45px;
+    width: 66px;
     background-color: #f78f1d;
     color: #fff;
     top: 100px;
 
 }
- .month{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 66px;
-     font-size: 22px;
+.month{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    font-size: 22px;
     color: #fff;
     background-color: #00aedb;
 }
@@ -474,7 +475,7 @@ ul{
     width: 100%;
 }
 .sidebar_end  li{
-padding:0 5px;
+    padding:0 5px;
 }
 .sidebar_end  li:before {
     position: absolute;
@@ -504,8 +505,8 @@ padding:0 5px;
     z-index: 0;
 }
 .sidebar_middle .bg_right{
-     top: 801px;
- }
+    top: 801px;
+}
 .sidebar_end .bg_right{
     top: 1602px;
 }

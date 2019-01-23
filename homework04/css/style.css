@@ -93,6 +93,7 @@ ul {
     display: block;
     position: absolute;
     background-color: #000;
+    z-index: 100;
     animation: navbar 250ms;
 }
 

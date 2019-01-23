@@ -2,9 +2,7 @@
      'use strict';
 let $ = jQuery;
 // -------------------------------OWL CAROUSEL------------------------
-    let owl = $('.owl-carousel');
-
-     $('.owl-carousel').owlCarousel({
+    let owl = $('.owl-carousel').owlCarousel({
 
          loop:true,
          margin:30,
